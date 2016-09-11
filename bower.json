@@ -1,0 +1,30 @@
+{
+  "name": "Boilerplate",
+  "description": "Simple Boilerplate",
+  "main": "index.js",
+  "authors": [
+    "Jeff McAmmond <jeffmcammond@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0"
+  },
+  "install": {
+    "path": {
+      "js": "dist/js",
+      "css": "dist/css"
+    }
+  }
+}
