@@ -1,8 +1,4 @@
 node_modules
-build
-source/lib
-source/js/templates.js
-dist/*
 bower_components/*
 
 ## Intellij Generated Files
@@ -10,7 +6,6 @@ bower_components/*
 
 
 .DS_Store
-build/*
 secret.json
 
 *.sublime-workspace
@@ -59,9 +54,4 @@ secret.json
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-
-# Other #
-#########
-screencaps/*
-screencaps
+/build/build.min.css

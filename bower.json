@@ -1,7 +1,7 @@
 {
-  "name": "Boilerplate",
-  "description": "Simple Boilerplate",
-  "main": "index.js",
+  "name": "ExitIntent",
+  "description": "Exit intent modal dialogs",
+  "main": "build/exitintent.js",
   "authors": [
     "Jeff McAmmond <jeffmcammond@gmail.com>"
   ],
@@ -17,9 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.1",
-    "bootstrap": "~3.3.6",
-    "font-awesome": "~4.5.0"
+    "jquery": "~2.1.1"
   },
   "install": {
     "path": {

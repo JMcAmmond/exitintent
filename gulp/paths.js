@@ -1,16 +1,14 @@
 module.exports = {
     basePath: "",
-    cssBuildPath: "build/css",
-    jsBuildPath: "build/js",
-    imageBuildPath: "build/image",
-    fontBuildPath: "build/fonts",
+    cssBuildPath: "build",
+    jsBuildPath: "build",
     applicationLESS: [
         "client/less/main.less"
     ],
     applicationJS: [
         "client/js/exitintent.js"
     ],
-    libJS: [
-        "bower_components/jquery/dist/jquery.min.js"
+    testJS: [
+        "test/**/*.*"
     ]
 };

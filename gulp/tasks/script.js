@@ -8,8 +8,9 @@ var utils = require('./utils');
  */
 gulp.task('script:dev', function() {
     return gulp.src(paths.applicationJS)
-        .pipe(plugins.uglify({mangle: false, compress: false})).on('error', utils.logError)
-        .pipe(plugins.concat('build.min.js'))
+        .pipe(gulp.dest('build'))
+        .pipe(plugins.uglify()).on('error', utils.logError)
+        .pipe(plugins.rename('exitintent.min.js'))
         .pipe(gulp.dest(paths.jsBuildPath))
         .pipe(plugins.notify(
             function(file) {
