@@ -6,7 +6,7 @@ var utils = require('./utils');
 /**
  * Concat and minify JS application files
  */
-gulp.task('script:test', function() {
+gulp.task('script:test', ['script:dev'], function() {
     gulp.src(paths.testJS)
         .pipe(plugins.jasmine())
 

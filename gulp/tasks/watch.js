@@ -1,10 +1,9 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
 
-gulp.task('livereload', function() {
-    //plugins.livereload.listen();
+gulp.task('watch:dev', function() {
     gulp.watch([
         'client/js/**/*.js'
-    ], ['script:dev']);
+    ], ['script:dev', 'script:test']);
     gulp.watch('client/less/**/*.less', ['less:dev']);
 });
