@@ -9,7 +9,7 @@ require('./gulp/tasks/jasmine');
 /**
  * Default Gulp task
  */
-gulp.task('default', ['script:dev', 'less:dev', 'watch:dev'], function(){
+gulp.task('default', ['script:dev', 'script:test', 'less:dev', 'watch:dev'], function(){
     console.log('Default Finished');
     console.log('Watching...');
 });

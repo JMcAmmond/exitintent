@@ -2,6 +2,7 @@ module.exports = {
     basePath: "",
     cssBuildPath: "build",
     jsBuildPath: "build",
+    karmaConfig: "karma.conf.js",
     applicationLESS: [
         "client/less/main.less"
     ],
