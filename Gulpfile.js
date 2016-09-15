@@ -3,7 +3,6 @@ var gulp = require('gulp');
 require('./gulp/tasks/less');
 require('./gulp/tasks/script');
 require('./gulp/tasks/watch');
-require('./gulp/tasks/lib');
 require('./gulp/tasks/jasmine');
 
 /**
