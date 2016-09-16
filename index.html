@@ -25,7 +25,11 @@
     <script src="build/exitintent.min.js" type="text/javascript"></script>
     <script>
         $(document).ready(function() {
-            $('#thanks-for-stopping').exitintent();
+            $('#thanks-for-stopping').exitintent({
+                callback: function() {
+                    console.log('callback');
+                }
+            });
         });
     </script>
 </body>
