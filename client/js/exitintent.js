@@ -65,10 +65,10 @@
          *
          */
         function disable() {
+            settings.disabled = true;
+
             _html.removeEventListener('mouseleave', handleMouseleave);
             _html.removeEventListener('mouseenter', handleMouseenter);
-
-            settings.disabled = true;
         }
 
         /**
@@ -83,6 +83,15 @@
          * Attach Exit Intent after allotted time
          */
         setTimeout(attachExitIntent, settings.timer);
+
+        /**
+         *
+         */
+        return {
+            fire: fire,
+            disable: disable,
+            isDisabled: isDisabled
+        }
     };
 
 }(jQuery));
