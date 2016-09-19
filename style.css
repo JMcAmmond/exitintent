@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Pattaya|Roboto:400,100,300,500,700,100italic,300italic,400italic,500italic);
+* {
+    border: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+}
+html, body {
+    background-color: #FFFFFF;
+}
+#thanks-for-stopping.ei-content {
+    background-color: #0ea2ee;
+    color: #FFFFFF;
+    padding: 2rem;
+}

@@ -2,33 +2,31 @@
 
     $.fn.exitintent = function(options) {
 
-        /**
-         *
-         */
         var settings = $.extend({
             timer       : 1000,
-            callback    : function() {},
             delay       : 0,
             sensitivity : 20,
-            disabled    : false
+            disabled    : false,
+            closeBtn    : true,
+            callback    : function() {}
         }, options);
 
-        /**
-         *
-         * @type {*|Element}
-         * @private
-         */
         var _html = document.documentElement,
-            _delayTimer = null;
+            _delayTimer = null,
+            _self = this;
 
         /**
          *
          */
-        function attachExitIntent() {
+        function attachEvents() {
             if ( isDisabled() ) { return; }
 
             _html.addEventListener('mouseleave', handleMouseleave);
             _html.addEventListener('mouseenter', handleMouseenter);
+
+            _self.find('.ei-close').on('click', function() {
+                _self.hide();
+            });
         }
 
         /**
@@ -80,9 +78,23 @@
         }
 
         /**
+         *
+         */
+        (function wrapContent() {
+            _self.addClass('ei-content')
+                .wrap('<div class="ei-modal"></div>');
+
+            if(settings.closeBtn) {
+                _self.prepend('<span class="ei-close">&times;</span>')
+            }
+
+            _self = $(_self).closest('.ei-modal');
+        })();
+
+        /**
          * Attach Exit Intent after allotted time
          */
-        setTimeout(attachExitIntent, settings.timer);
+        setTimeout(attachEvents, settings.timer);
 
         /**
          *
