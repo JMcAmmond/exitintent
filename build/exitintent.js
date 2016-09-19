@@ -16,7 +16,7 @@
             _self = this;
 
         /**
-         *
+         * Attaches events to the window and close modal events
          */
         function attachEvents() {
             if ( isDisabled() ) { return; }
@@ -30,7 +30,7 @@
         }
 
         /**
-         *
+         * Handles mouse leave events
          * @param event
          */
         function handleMouseleave(event) {
@@ -40,7 +40,7 @@
         }
 
         /**
-         *
+         * Handles mouse enter events
          */
         function handleMouseenter() {
             if (_delayTimer) {
@@ -50,7 +50,7 @@
         }
 
         /**
-         *
+         * Fires the exit intent modal
          */
         function fire() {
             if( isDisabled() ) { return; }
@@ -60,7 +60,7 @@
         }
 
         /**
-         *
+         * Disables exit intent and removes event listeners
          */
         function disable() {
             settings.disabled = true;
@@ -70,7 +70,7 @@
         }
 
         /**
-         *
+         * Checks if exit intent is disabled
          * @returns {boolean}
          */
         function isDisabled() {
@@ -78,7 +78,7 @@
         }
 
         /**
-         *
+         * Wraps content and in '.ei-modal' div and prepend close button
          */
         (function wrapContent() {
             _self.addClass('ei-content')
@@ -97,7 +97,7 @@
         setTimeout(attachEvents, settings.timer);
 
         /**
-         *
+         * Returned functions
          */
         return {
             fire: fire,
