@@ -8,27 +8,28 @@
             sensitivity : 20,
             disabled    : false,
             closeBtn    : true,
+            customClose : null,
             animation   : 'bounceIn',
             callback    : function() {}
         }, options);
 
         var _html = document.documentElement,
             _delayTimer = null,
-            _self = this;
+            _el = this;
 
         (function init() {
             if(settings.closeBtn) {
-                _self.prepend('<span class="ei-close">&times;</span>')
+                _el.prepend('<span class="ei-close">&times;</span>')
             }
 
             if(settings.animation) {
-                _self.addClass("animated " + settings.animation);
+                _el.addClass('animated ' + settings.animation);
             }
 
-            _self.addClass('ei-content')
+            _el.addClass('ei-content')
                 .wrap('<div class="ei-modal"></div>');
 
-            _self = $(_self).closest('.ei-modal');
+            _el = $(_el).closest('.ei-modal');
 
             attachClickEvents();
 
@@ -39,16 +40,22 @@
          * Attach click events to modal
          */
         function attachClickEvents() {
+            if( settings.customClose ) {
+                _el.find(settings.customClose).on('click', function() {
+                    _el.hide();
+                })
+            }
+            
             //Hide modal when clicking outside modal
-            _self.on('click', function() {
-                _self.hide();
+            _el.on('click', function() {
+                _el.hide();
             }).children().click(function(e) {
                 return false;
             });
 
             //Hide modal when close button is clicked
-            _self.find('.ei-close').on('click', function() {
-                _self.hide();
+            _el.find('.ei-close').on('click', function() {
+                _el.hide();
             });
         }
 
@@ -82,28 +89,13 @@
             }
         }
 
-        function centerElement(el) {
-            el.css({
-                'position': 'absolute',
-                'left': '50%',
-                'top': '50%',
-                'z-index': 10000
-            });
-
-            el.css({
-                'margin-left': -el.outerWidth() / 2 + 'px',
-                'margin-top': -el.outerHeight() / 2 + 'px'
-            });
-        }
-
         /**
          * Fires the exit intent modal
          */
         function fire() {
             if( isDisabled() ) { return; }
 
-            _self.show();
-            centerElement(_self.find('.ei-content'));
+            _el.show();
 
             settings.callback();
             disable();

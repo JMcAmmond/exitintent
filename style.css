@@ -11,7 +11,34 @@ html, body {
     background-color: #FFFFFF;
 }
 #thanks-for-stopping {
-    background-color: #0ea2ee;
-    color: #FFFFFF;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    background-color: #FFFFFF;
     padding: 2rem;
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+}
+
+#thanks-for-stopping form {
+    text-align: center;
+}
+
+#thanks-for-stopping input {
+    width: 300px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 15px 0;
+}
+
+#thanks-for-stopping button {
+    padding: 1rem 4rem;
+    color: #FFFFFF;
+    background-color: #00aaa6;
+    border-radius: 5px;
+    border: 1px solid #00aaa6;
+}
+
+#thanks-for-stopping .center {
+    text-align: center;
 }

@@ -60,7 +60,21 @@
     </main>
 
     <div id="thanks-for-stopping">
-        Thanks for stopping by
+        <header>
+            <h2 class="center">Thanks for stopping by!</h2>
+        </header>
+        <section>
+            <p>This is a exit intent modal</p>
+            <p>This modal can be styles however you wish. This is just one example</p>
+            <p>Fuller words. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A debitis dolore eos error, iste modi molestias nihil optio qui sint tempore vel. Aliquam at doloremque dolorum error iusto, repellendus sapiente!</p>
+            <hr>
+            <form onsubmit="e.preventDefault()">
+                <input type="text">
+                <button>Send</button>
+            </form>
+            <hr>
+            <p class="center customClose"><a href="">No Thanks</a</p>
+        </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -70,7 +84,8 @@
             var el = $('#thanks-for-stopping').exitintent({
                 callback: function() {
                     console.log('Exit intent fired');
-                }
+                },
+                customClose: '.customClose'
             });
 
             console.log("isDisabled: " + el.isDisabled());
