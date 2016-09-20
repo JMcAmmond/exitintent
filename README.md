@@ -1,6 +1,6 @@
 #Exit Intent Modal
 
-Exit Intent is a jQuery plugin that is designed to help you increase your landing page conversion rates. Exit Intent enables you to display a modal before a user leaves your website, helping you increase your landing page conversion rates. Exit intent modals have been statistically proven to increase conversion rates by as much as 15% depending on your audience, traffic quality and offer.
+Exit Intent is a jQuery plugin that is designed to help you increase your landing page conversion rates. Exit Intent enables you to display a modal before a user leaves your website, helping you increase your landing page conversion rates. Exit intent modals have been statistically proven to increase conversion rates by as much as 15% depending on your audience, traffic quality and offer. Exit Intent is still a work in progress and will be adding new features in the near future.
 
 ![Preview](https://github.com/JMcAmmond/exitintent/blob/master/example/exit-intent.gif?raw=true "Exit Intent Preview")
 
