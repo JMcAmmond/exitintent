@@ -1,4 +1,5 @@
 @import 'helpers/mixins.less';
+@import 'helpers/animate.less';
 
 .ei-modal {
     position: fixed; top: 0; right: 0; bottom: 0; left: 0;
@@ -7,6 +8,7 @@
     -webkit-overflow-scrolling: touch;
     outline: 0;
     background-color: rgba(0,0,0,0.4);
+    display: none;
 
     .ei-close {
         .radius(50%);
@@ -18,10 +20,5 @@
         font-size: 16px;
         text-align: center;
         cursor: pointer;
-    }
-
-    .ei-content {
-        .transform-transXY();
-        position: absolute; top: 50%; left: 50%;
     }
 }
