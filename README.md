@@ -19,6 +19,8 @@ Exit Intent is a jQuery plugin that is designed to help you increase your landin
 - animation
 - callback
 
+---
+
 #### timer
 By default, the timer is set to `1000`ms as the user my not have entended to be on that page. The timer can be changed by specifying a `timer` option in milliseconds.
 
@@ -41,6 +43,8 @@ By default, delay is set to `0`ms. Changing this option will tell Exit Intent in
     });
 ```
 
+---
+
 #### sensitivity
 By default, the sensitivity is set to `20`. This value determines how close a users mouse needs to be from the top of the screen to trigger Exit Intent. The higher value, the more sensitive, and the more quickly the event will fire.
 
@@ -50,6 +54,8 @@ By default, the sensitivity is set to `20`. This value determines how close a us
         sensitivity: 40 // Fire Exit Intent sooner
     });
 ```
+
+---
 
 #### disabled
 By default, disabled is set to `false`. If for some reason you do not want Exit Intent to be active on a page you can set `disabled` to `true` and deactive Exit Intent.
@@ -61,6 +67,8 @@ By default, disabled is set to `false`. If for some reason you do not want Exit 
     });
 ```
 
+---
+
 #### closeBtn
 By default, closeBtn is set to `true`. When set to `false` the close 'x' button will not appear in the top right corner of the modal. 
 
@@ -70,6 +78,8 @@ By default, closeBtn is set to `true`. When set to `false` the close 'x' button 
         closeBtn: false // Hide close button
     });
 ```
+
+---
 
 #### customClose
 By default, customClose is set to `null`. This option is used when providing your own close button in the Exit Intent modal window. Option should be set as a jQuery class or ID. 
@@ -81,6 +91,8 @@ By default, customClose is set to `null`. This option is used when providing you
     });
 ```
 
+---
+
 #### animation
 By default, animation is set to `bounceIn`. These animation are not provided and simply add a class to the Exit Intent modal when shown. Example page is using animation provided by animate css but you can define your own in css aswell.
 
@@ -90,6 +102,8 @@ By default, animation is set to `bounceIn`. These animation are not provided and
         animation: 'fadeIn'
     });
 ```
+
+---
 
 #### callback
 You can add a callback, which is a function that will run once Exit Intent has been triggered, by using the `callback` option.
