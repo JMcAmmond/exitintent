@@ -76,10 +76,8 @@
     <script>
         $(document).ready(function() {
             var el = $('#thanks-for-stopping').exitintent({
-                callback: function() {
-                    console.log('Exit intent fired');
-                },
-                customClose: '.customClose'
+                customClose: '.customClose',
+                callback: function() { console.log('Exit intent fired'); }
             });
 
             console.log("isDisabled: " + el.isDisabled());
