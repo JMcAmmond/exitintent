@@ -14,9 +14,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="client/css/animate.css">
+    <link rel="stylesheet" href="../build/exitintent.min.css">
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="build/exitintent.min.css">
 </head>
 <body>
 
@@ -63,7 +63,7 @@
             <h3 class="center">Your Next Order</h3>
             <form onsubmit="e.preventDefault()">
                 <input type="text">
-                <button>Send</button>
+                <button>Submit</button>
             </form>
             <p class="center customClose">
                 <a href="">No thanks, I don't like free stuff</a>
@@ -72,7 +72,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="build/exitintent.min.js" type="text/javascript"></script>
+    <script src="../build/exitintent.min.js" type="text/javascript"></script>
     <script>
         $(document).ready(function() {
             var el = $('#thanks-for-stopping').exitintent({
