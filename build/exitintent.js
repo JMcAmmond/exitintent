@@ -17,6 +17,9 @@
             _delayTimer = null,
             _el = this;
 
+        /**
+         *
+         */
         (function init() {
             if(settings.closeBtn) {
                 _el.prepend('<span class="ei-close">&times;</span>')
@@ -45,15 +48,13 @@
                     _el.hide();
                 })
             }
-            
-            //Hide modal when clicking outside modal
+
             _el.on('click', function() {
                 _el.hide();
             }).children().click(function(e) {
                 return false;
             });
 
-            //Hide modal when close button is clicked
             _el.find('.ei-close').on('click', function() {
                 _el.hide();
             });
