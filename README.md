@@ -45,7 +45,7 @@ By default, the sensitivity is set to `20`. This value determines how close a us
 *Example*
 ```
     $('#myModal').exitintent({
-        sensitivity: 10 // Fire Exit Intent sooner
+        sensitivity: 40 // Fire Exit Intent sooner
     });
 ```
 
