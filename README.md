@@ -29,6 +29,8 @@ By default, the timer is set to `1000`ms as the user my not have entended to be 
     });
 ```
 
+---
+
 #### delay
 By default, delay is set to `0`ms. Changing this option will tell Exit Intent in milliseconds how long to wait before showing. If a users mouse reenters before the delay is finished the modal will not appear.
 
