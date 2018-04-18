@@ -1,4 +1,4 @@
-#Exit Intent Modal
+# Exit Intent Modal
 
 Exit Intent is a jQuery plugin that is designed to help you increase your landing page conversion rates. 
 
